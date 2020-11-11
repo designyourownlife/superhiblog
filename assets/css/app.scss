@@ -1,0 +1,177 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,700');
+@import "/assets/css/reset.css";
+
+$background: #f7f9ff;
+$black: #0c0c0c;
+$red: #ff3500;
+$typography: Roboto, sans-serif;
+$content-width: 780px;
+$blog-width: 540px;
+
+body {
+  background-color: $background;
+  color: $black;
+  font-family: $typography;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: $content-width;
+  margin: 80px auto;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p { 
+  margin-bottom: 1em;
+}
+strong {
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  margin: 40px 0 0 0;
+}
+nav a {
+  margin-left: 10px;
+  font-weight: 700;
+}
+nav a, p a {
+  color: $black;
+  text-decoration: none;
+  border-bottom: 3px solid $red;
+}
+
+div.blog-posts {
+
+  max-width: $blog-width;
+  
+  a {
+    text-decoration: none;
+    color: $black;
+    display: block;
+    margin: 0 0 40px 0; 
+  }
+  .read-more {
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+  }
+  .read-more img {
+    margin-left: 10px;
+  }
+
+}
+
+div.post, 
+div.post-content {
+
+  h3 {
+    margin-top: 80px;
+  }
+  p { 
+    margin-bottom: 40px;
+    max-width: $blog-width;
+  }
+  img {
+    max-width: $content-width
+  }
+  
+}
+
+div.circle {
+  position: fixed;
+  bottom: -250px;
+  right: -250px; 
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: $red;
+}
+
+blockquote {
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  text-align: right;
+  font-style: italic;
+	padding: 0;
+	position: relative;
+	min-width: 400px;
+	max-width: $content-width;
+  font-size: 2.4vw;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-fon-smoothing: grayscale;
+}
+
+div.post-content blockquote p {
+  max-width: $content-width;
+}
+blockquote footer {
+	position: relative;
+}
+
+blockquote footer:before {
+	content: '–';
+	position: absolute;
+	left: -.6em;
+}
+
+@media all and (max-width: 1150px) {
+  blockquote {
+    font-size: 3vw;
+  }
+}
+
+@media all and (max-width: $content-width) {
+  blockquote {
+    font-size: 3.75vw;
+  }
+	div.circle {
+    bottom: -150px;
+    right: -150px; 
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media all and (max-width: 600px) {
+	div.circle {
+    bottom: -100px;
+    right: -100px; 
+    width: 200px;
+    height: 200px;
+  }
+	blockquote {
+    font-size: 3.5vw;
+    width: 100%;
+		min-width: 100%;
+	}
+}
