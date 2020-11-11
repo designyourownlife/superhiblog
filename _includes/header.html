@@ -2,8 +2,10 @@
 
   <a href="/"><img src="/assets/images/logo.svg" alt="ambulant design"></a>
   <nav>
-    <a href="/" {% if page.url == '/'%} class="selected"{% endif%}>Home</a>
-    <a href="/about/" {% if page.url == '/about/'%} class="selected"{% endif%}>About</a>
+    {% assign doclist = site.data.navlist.docs  %}
+    {% for item in doclist %}
+      <a href="{{ item.url }}" {% if page.url == item.url %} class="selected"{% endif%}>{{ item.title }}</a>
+      {% endfor %}
   </nav>
 
 </header>
