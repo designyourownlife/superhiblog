@@ -21,8 +21,8 @@ defaults:
     layout: post
 email: matthias@ambulantdesign.nl
 description: Design portfolio of one-woman-studio ambulant design in Amsterdam
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 twitter_username: jekyllrb
 github_username: designyourownlife
 theme: minima
