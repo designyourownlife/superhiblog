@@ -16,4 +16,4 @@ If you’re going to miss the last train (most trains and subways only run until
 
 Shibuya is especially popular with Tokyo’s youth, but is relatively accessible to and full of non-Japanese locals and visitors as well. With dozens of clubs featuring top local and international DJs, Shibuya is one of the city’s dance music hubs. There are also countless smaller establishments well worth checking out, including the character-filled Nonbei Yokocho, an old-fashioned area of tightly-packed side streets filled with charming tiny bars and intriguing restaurants.
 
-Read more about Tokyo’s night life neighborhoods.
+Read more about Tokyo’s [night life neighborhoods](https://boutiquejapan.com/tokyo-nightlife-guide/).
